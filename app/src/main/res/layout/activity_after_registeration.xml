@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activity.AfterRegisteration">
+
+    <TextView
+        android:id="@+id/txthello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="6dp"
+        android:text="hello"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtRambo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txthello"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="6dp"
+        android:text="Rambo"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtPeaky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRambo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Peaky"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:padding="6dp"/>
+
+    <TextView
+        android:id="@+id/txtBlinder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPeaky"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="6dp"
+        android:text="Blinder"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtThomas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtBlinder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="6dp"
+        android:text="Thomas"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtShelby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtThomas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="6dp"
+        android:text="shelby"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

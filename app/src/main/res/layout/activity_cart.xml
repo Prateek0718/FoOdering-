@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CartActivity"
+    android:background="#ffffff"
+    android:id="@+id/drawerLayouttt"
+    >
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/coordinatorLayoutt">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                android:id="@+id/Toolbar"
+                android:minHeight="?attr/actionBarSize"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:visibility="invisible"
+            android:id="@+id/cartProgressLayout"
+            android:elevation="1dp">
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+            android:id="@+id/linearLayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.09"
+            android:background="#e2e2e2"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:padding="10dp"
+                android:text="Ordering from:"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:padding="10dp"
+                android:paddingStart="3dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/txtOrderingFrom"/>
+
+
+        </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.01"
+                android:background="@color/black" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewCart"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.70" />
+            <RelativeLayout
+                android:id="@+id/relativeLayoutProceedToCart"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.20">
+                <Button
+                    android:id="@+id/btnPlaceOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:backgroundTint="#FF9800"
+                    android:textAllCaps="false"
+                    android:text="Place Order(Rs)"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</LinearLayout>
